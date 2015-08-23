@@ -15,7 +15,7 @@
 
     <div ng-class="{true: 'animated zoomOut', false: ''}[formSubmitted]" id="form-container" class="center-block animated fadeInRight" >
         <br/>
-        <form>
+        <form name="contactForm">
             <div class="form-group">
               <label for="form-name">Name:</label>
               <input placeholder="What is your name?" type="text" class=" curvy form-control" id="form-name" ng-model="contact.name" required>
@@ -31,7 +31,7 @@
               <textarea placeholder="Say something to me..." rows="7" class=" curvy form-control" id="form-comment" ng-model="contact.comment" required></textarea>
             </div>
             <div class="center-elements">
-                <button type="submit" ng-click="submitForm()"  class="btn btn-primary bottom-fifteen">Submit</button>
+                <button type="submit" ng-disabled="contactForm.$invalid" ng-click="submitForm()"  class="btn btn-primary bottom-fifteen">Submit</button>
             </div>
         </form>
     </div>
