@@ -1,0 +1,22 @@
+/******************************** bootstrap hacks  ****************************************/
+ html{
+ 	font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;height:100%;}
+
+ body{
+ 	margin:0;
+ 	height: 200%;
+ }
+.curvy{border-radius:22px;}
+
+.bottom-fifteen{margin-bottom: 15px;}
+
+
+@media only screen and (max-width : 568px)
+{
+
+    .navbar {
+        min-height: 56px;
+    }
+
+
+}

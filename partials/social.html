@@ -1,0 +1,11 @@
+<div class="social-container-bottom">
+    <div ng-controller="socialController as soc">
+        <ul id="social-media-list-inline">
+            <li class="mobile-list-social" ng-repeat="social in soc.socialMedia">
+                <a title="{{social.alt}}" target="_blank" href="{{social.href}}">
+                    <img ng-class="{'animated rubberBand':hover}" ng-mouseenter="hover=true" ng-mouseleave="hover=false"  ng-src="{{social.imageSrc}}" alt="{{social.alt}}"></img>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

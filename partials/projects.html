@@ -1,0 +1,95 @@
+<div id="main-container" ng-controller="projectController">
+    <div>
+        <h1 class="content-header animated fadeInDown">Projects</h1>
+
+        <hr class="charcoal animated fadeIn">
+    </div>
+
+
+
+
+        <div class="row featurette animated zoomInLeft">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">IBM <span class="text-muted">Social Learning</span> </h2>
+                <p class="lead">An innovative learning solution by IBM</p>
+
+                <p>For the past few years I've been working as a Front end and Solr search engineer on IBM Social Learning. ISL is a product that enables users to build up social learning networks, to wrap social learning groups around learning content, and to hold social discussions about the learning content. The solution offers a special status for experts and a highly optimized user experience, especially for video learning content. </p>
+
+                <p>Our main clients are Boston's Childrens Hospital, Petrobras, Royal College of Surgeons and Bank of Ireland</p>
+
+                <p>I split my time between front end work in Javascript (Dojo), HTML, CSS and some Java based backend development creating RESTful APIs and working on our search functionality using SOLR.</p>
+
+                <p>I can't link to a production site but you can find out more about ISL <a target="_blank" href="http://www.ibm.com/marketplace/cloud/social-learning/us/en-us">here</a></p>
+            </div>
+
+            <div class="col-md-5">
+                <carousel>
+                  <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}">
+                  </slide>
+                </carousel>
+            </div>
+         </div>
+
+         <!-- ************************ divider ************************ -->
+            <hr class="feature-hr">
+
+        <div class="row featurette animated zoomInRight">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Metasearch <span class="text-muted">Engine</span></h2>
+              <p class="lead">Search Engine Aggregator</p>
+
+               <p>As part of my final year MSc project, I designed and developed a metasearch engine, that queries and aggregates results from multiple search engines and displays them to the end user. Here's a <a target="_blank" href="http://www.niallshannon.com/metasearch/">link</a> If you want to check it out. This was primarily written in PHP with some SQL backend and CSS/HTML/JS frontend. If you're interested in learning more about the design and development of this project, be sure to download the brief in PDF format <a target="_blank" href="https://www.dropbox.com/s/pqfpy23tktfr76x/Metasearch_Evaluation.pdf?dl=0">here</a> </p>
+            </div>
+
+            <div class="col-md-5 col-md-pull-7">
+                        <img ng-class="{'animated rubberBand':meta}" ng-mouseenter="meta=true" ng-mouseleave="meta=false" class="featurette-image img-responsive center-block" src="style/images/meta_logo.png" alt="Generic                             placeholder image">
+            </div>
+          </div>
+
+        <!-- ************************ divider ************************ -->
+          <hr class="feature-hr">
+
+          <div class="row featurette animated zoomInLeft">
+           <div class="col-md-7">
+              <h2 class="featurette-heading">Tinryland.ie <span class="text-muted">parish website</span> </h2>
+              <p class="lead">Local parish website, 1000 views per month. Undergoing renovation</p>
+               <p>This is one of the first projects I've worked on. A simple website for my local parish written in PHP and MYSQL backend. Extremely popular in my home community, this website still gets 1000 hits per month. You can check it out <a target="_blank" href="http://www.tinryland.ie">here</a></p>
+
+               <p>Unfortunately, the invention of the smart phone has taken it's toll on my beloved first website and it's certainly starting to show it's age. I'm currently in the process of modernising this site, introducing responsive design and lot's of new features. You can see a preview of the new <a target="_blank" href="http://www.niallshannon.com/tinryland/content/">tinryland.ie here.</a></p>
+            </div>
+            <div class="col-md-5">
+              <img ng-class="{'animated rubberBand':tinry}" ng-mouseenter="tinry=true" ng-mouseleave="tinry=false" class="featurette-image img-responsive center-block" src="style/images/tinryland.gif" alt="Other Skills">
+            </div>
+          </div>
+
+             <!-- ************************ divider ************************ -->
+            <hr class="feature-hr">
+
+        <div class="row featurette animated zoomInRight">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Project <span class="text-muted">Euler</span></h2>
+              <p class="lead">In my spare time, I like to practice programming challenges on <a href="https://projecteuler.net/" target="_blank">Project Euler</a></p>
+
+               <p>I solve these problems using Java. You can check out my solutions in my <a href="https://github.com/shanahobo/euler" target="_blank">project euler github repository</a>The image shows how many I've solved. Are you on Project Euler? Add me as a friend <a href="https://projecteuler.net/friends" target="_blank">here</a> using this key: <p><input style="margin-top:30px" size="38" value="366478_859b1e392aef623ec13faec0188d78a4"></input></p></p>
+            </div>
+
+            <div class="col-md-5 col-md-pull-7">
+                        <img ng-class="{'animated rubberBand':euler}" ng-mouseenter="euler=true" ng-mouseleave="euler=false" class="featurette-image img-responsive center-block" src="https://projecteuler.net/profile/shanahobo.png" alt="My project euler profile">
+            </div>
+          </div>
+
+                <!-- ************************ divider ************************ -->
+          <hr class="feature-hr">
+
+          <div class="row featurette animated zoomInLeft">
+           <div class="col-md-7">
+              <h2 class="featurette-heading">Android <span class="text-muted">Apps</span> </h2>
+              <p class="lead">I've developed some android applications in my spare time</p>
+               <p>Check my google play profile <a href="https://play.google.com/store/apps/developer?id=Shanahobo">here</a> for Android Apps I've developed. I hope to add much more apps to this collection in time.</p>
+            </div>
+            <div class="col-md-5">
+              <img ng-class="{'animated rubberBand':android}" ng-mouseenter="android=true" ng-mouseleave="android=false" class="featurette-image img-responsive center-block" src="style/images/black_android_logo.png" alt="Other Skills">
+            </div>
+          </div>
+</div>

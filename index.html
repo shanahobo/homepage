@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Niall Shannon</title>
+<meta name="viewport" content="width=device-width" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style/css/animate.css">
+<link rel="stylesheet" type="text/css" href="style/css/custom.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style/css/bootstrap-hacks.css">
+
+
+
+</head>
+<body ng-app="webApp" ng-controller="menuController">
+
+    <div id="landing">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container" ng-controller="viewController as view">
+            <div class="navbar-header">
+
+              <!-- mobile menu html -->
+              <button type="button" ng-class="{'rotate-right':showMenu==true}" class="navbar-toggle collapsed"
+                      ng-click="toggleMenu()" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+
+                  <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button>
+               <a class="navbar-brand" ng-click="removeContent()" href="#/">Niall Shannon</a>
+            </div>
+            <div ng-class="{'animated fadeOutUp':hideMenu==true}">
+                <div class="mobile-menu" ng-show="showMenu">
+                    <ul class="nav nav-pills nav-justified" id="mobile-nav-links" ng-show="view.links">
+                       <li class="animated fadeInDown" ng-click="bringBackTheContent()" ng-repeat="link in view.links"><a href="#/{{link.title}}">{{link.title}}</a></li>
+                   </ul>
+                </div>
+            </div>
+              <!-- end of mobile -->
+
+
+            <!-- main navbar-->
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul ng-show="view.links" class="nav navbar-nav">
+                <li class="animated fadeInLeft" ng-click="bringBackTheContent()" ng-repeat="link in view.links"><a href="#/{{link.title}}">{{link.title}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- main container-->
+
+        <div id="main-screen"></div>
+        <div id="main-screen-footer">
+        </div>
+        <!-- end of main container-->
+    </div>
+
+    <div id="content-node">
+
+        <div class="container">
+
+             <div class="animated fadeInLeft" ng-class="classType" id="content-div">
+                 <!-- ng-view suppliments the route provider. do not change the url -->
+                 <ng-view></ng-view>
+             </div>
+        </div> <!-- /container -->
+
+        <!-- Floating social container-->
+        <div id="floaters">
+             <a title="email me" ng-class="{'animated rubberBand':mail}" ng-mouseenter="mail=true" ng-mouseleave="mail=false" href="mailTo:info@niallshannon.com" target="_blank">
+                 <div id="item1"></div>
+            </a>
+             <a title="link with me" ng-class="{'animated rubberBand':linkedin}" ng-mouseenter="linkedin=true" ng-mouseleave="linkedin=false" href="https://ie.linkedin.com/pub/niall-shannon/60/9bb/1a4" target="_blank">
+                 <div id="item2"></div>
+            </a>
+             <a title="follow me" ng-class="{'animated rubberBand':twitter}" ng-mouseenter="twitter=true" ng-mouseleave="twitter=false" href="https://twitter.com/niallshannon" target="_blank">
+                 <div id="item3"></div>
+            </a>
+             <a title="add me to your circle" ng-class="{'animated rubberBand':googleplus}" ng-mouseenter="googleplus=true" ng-mouseleave="googleplus=false" href="https://plus.google.com/+NiallShannon86/posts" target="_blank">
+                 <div id="item4"></div>
+            </a>
+             <a title="my github" ng-class="{'animated rubberBand':github}" ng-mouseenter="github=true" ng-mouseleave="github=false" href="https://github.com/shanahobo/" target="_blank">
+                 <div id="item5"></div>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="footer">
+        <p class="right-down"> &copy; Niall Shannon 2015</p>
+        <social></social>
+    </div>
+
+</body>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
+	<script src="main.js"></script>
+	<script src="js/expertise.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/viewController.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/downloads.js"></script>
+    <script src="js/social.js"></script>
+</html>

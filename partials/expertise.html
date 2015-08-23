@@ -1,0 +1,55 @@
+<div ng-controller="expController as exp">
+    <div>
+        <h1 class="content-header animated fadeInDown">Skills</h1>
+
+        <hr class="charcoal animated fadeIn">
+    </div>
+
+
+        <div class="row featurette animated zoomInLeft">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Technical <span class="text-muted">Expertise</span> </h2>
+                <p class="lead">Java, Javascript, AngularJS, Dojo, XML, PHP, SQL, HTML5, CSS3, XML</p>
+
+                <p>These are the technical skills I practice in both a professional and personal capacity on a daily basis. I wouldn't say this is an exhaustive list, as a programming enthusiast, every language interests me and I'm eager to learn as much as possible. The skills mentioned above are ones I would feel comfortable working with in a professional capacity right now. I'm adding to this list of expertise all the time. </p>
+            </div>
+
+            <div class="col-md-5">
+              <img ng-class="{'animated rubberBand':skills}" ng-mouseenter="skills=true"
+                   ng-mouseleave="skills=false" class="featurette-image img-responsive center-block" src="style/images/expertise.png" alt="Technical Expertise">
+            </div>
+         </div>
+
+         <!-- ************************ divider ************************ -->
+            <hr class="feature-hr">
+
+        <div class="row featurette animated zoomInRight">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Tools <span class="text-muted">I work with</span></h2>
+              <p class="lead">Eclipse, RAD, Websphere, Tomcat, Solr, Linux, Putty, Cygwin, Firebug, SQuirreL, Chrome Dev Tools, Brackets, GitHub, Rational Team Concert, Gimp, Paint.net, Selenium</p>
+
+               <p>They say a good carpenter never blames his tools. I don't know if the same applies to a software developer. Some tools I don't like at all. These are the ones I do like. They make my work easy, enjoyable and productive.</p>
+            </div>
+
+            <div class="col-md-5 col-md-pull-7">
+                        <img ng-class="{'animated rubberBand':tools}" ng-mouseenter="tools=true" ng-mouseleave="tools=false" class="featurette-image img-responsive center-block" src="style/images/tools.png" alt="Generic                             placeholder image">
+            </div>
+          </div>
+
+        <!-- ************************ divider ************************ -->
+          <hr class="feature-hr">
+
+          <div class="row featurette animated zoomInLeft">
+           <div class="col-md-7">
+              <h2 class="featurette-heading">Other <span class="text-muted">Skills</span> </h2>
+              <p class="lead">Agile, Scrum, Team Building, Empathy, Psychology, Research & Investigation, Communication, Weird yoga levitation</p>
+               <p>There's no 'I' in team. I certainly think technical skills are important but they're not "everything". I like working with people. It makes a project fun. It makes work more interesting. It facilitates fast and effective learning. People skills are essential. I also practice agile (sprint planning, iteration reviews) and scrum methodologies</p>
+            </div>
+            <div class="col-md-5">
+              <img ng-class="{'animated rubberBand':other}" ng-mouseenter="other=true" ng-mouseleave="other=false" class="featurette-image img-responsive center-block" src="style/images/other.png" alt="Other Skills">
+            </div>
+          </div>
+
+
+       </div>
+</div>
