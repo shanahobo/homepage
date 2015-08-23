@@ -340,25 +340,31 @@ textArea.ng-pristine{
 .formSubmitSuccess{
     animation-delay: 1s;
     text-align: center;
-    font-size: 1.225em;
-    font-weight: 900;
-    border-radius: 20px;
-    color: white;
-    background-color: rgb(96, 185, 63);
-    text-shadow: 2px 2px black;
+    width: 100%;
+    border: 1px solid #D8D8D8;
     padding: 10px;
+    border-radius: 5px;
+    font-family: Arial !important;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: rgb(236, 255, 216);
+    color: green;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .formSubmitFail{
     animation-delay: 1s;
     text-align: center;
-    font-size: 1.225em;
-    font-weight: 900;
-    border-radius: 20px;
-    color: white;
-    background-color: rgb(210, 69, 69);
-    text-shadow: 2px 2px black;
-    padding: 10px;
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial !important;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: rgb(255, 249, 242);
+    color: rgb(211, 0, 0);
 }
 
 /**********************************************************************************************************************************************/
